@@ -37,5 +37,16 @@
 #
 class opendas {
 
+# get java 7 (JRE)
+  class { 'java':
+    distribution => 'jre',
+  }
 
+# install ActiveMQ
+
+# install opendas server
+
+# install opendas client
+
+# optional install odoo v8
 }
