@@ -10,3 +10,8 @@ matrix:
     env: PUPPET_GEM_VERSION="~> 3.0"
 notifications:
   email: false
+install:
+  - bundle install
+  - rspec-puppet-init
+script:
+  - "rake spec SPEC_OPTS='--format documentation'"
